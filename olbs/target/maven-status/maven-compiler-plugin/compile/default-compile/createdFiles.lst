@@ -1,0 +1,9 @@
+olbs/be/service/FeeStructureService.class
+olbs/be/bean/ResponseBean.class
+olbs/be/bean/FeeStructureDetailBean.class
+olbs/be/WebMain.class
+olbs/be/controller/FeeStructureController.class
+olbs/be/model/entities/FeeStructure.class
+olbs/be/constants/Constants.class
+olbs/be/bean/FeeStructureParentBean.class
+olbs/be/model/repositories/FeeStructureRepository.class
