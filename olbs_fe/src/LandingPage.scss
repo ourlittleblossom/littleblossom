@@ -13,6 +13,7 @@
         right: 20px;
         margin-top: 40px;
         float: right;
+        min-width: max-content;
 
         .pivot-item {
             color: red;
@@ -27,5 +28,6 @@
 
     .pivot-content {
         display: block;
+        overflow: auto;
     }
 }

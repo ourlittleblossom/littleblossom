@@ -10,7 +10,8 @@ export class Home extends React.Component<{}, {}> {
         return (
             <div className="carousel-container">
                 <Carousel 
-                autoPlay={true} >
+                autoPlay={true} 
+                infiniteLoop={true}>
                 <div>
                     <img src={Home1} />
                    
