@@ -2,6 +2,7 @@ import React from 'react';
 var Marquee = require('react-marquee');
 import request from 'superagent';
 import './FeeStructure.scss';
+import * as Constants from '../Constants';
 
 interface IFeeData{
     className: string;
@@ -24,7 +25,7 @@ export class FeeStructure extends React.Component<{}, IState> {
 
 
         request
-        .get('http://localhost:1208/OLBS/fees')
+        .get(Constants.serverConstants.serverIP + '/OLBS/fees')
         .set('Content-Type','application/json')
 
         .set('Accept', 'application/json')
