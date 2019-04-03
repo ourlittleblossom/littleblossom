@@ -1,0 +1,38 @@
+.fee-structure-container {
+    padding-left: 350px;
+
+    .row-conatiner {
+        padding-bottom: 20px;
+    }
+
+    .fee-info {
+        margin-left: 2px;
+        width: 1202px;
+        height: 24px;
+        background-color: #5CB85C ;
+    }
+
+    .table-row {
+        height: 24px;
+
+
+        .table-column {
+            font-size: 12px;
+            width: 400px;
+        }
+
+        .column-header {
+            font-size: 14px;
+        }
+    }
+
+    .header-row {
+        background-color: #5CB85C ;
+    }
+    .odd-row {
+        background-color: #DCF7C8;
+    }
+    .even-row {
+        background-color: #C4E4A1;
+    }
+}

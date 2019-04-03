@@ -1,0 +1,36 @@
+{
+  "name": "olbs_fe",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://127.0.0.1:1208/OLBS_FE",
+  "dependencies": {
+    "@types/jest": "24.0.11",
+    "@types/node": "11.11.3",
+    "@types/react": "16.8.8",
+    "@types/react-dom": "16.8.2",
+    "@types/superagent": "^4.1.1",
+    "node-sass": "^4.11.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-marquee": "^1.0.0",
+    "react-responsive-carousel": "^3.1.47",
+    "react-scripts": "2.1.8",
+    "superagent": "^5.0.2",
+    "typescript": "3.3.3333"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
