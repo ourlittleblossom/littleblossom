@@ -49,7 +49,7 @@ export class FeeStructure extends React.Component<{}, IState> {
                 <div className="fee-info">
                 <div className={"marquee-container"}>
                     <Marquee
-                        text="PLEASE NOTE: FEES TO BE PAID AT THE TIME OF PROMOTION TO NEXT HIGHER CLASS.  PLEASE NOTE:  FEES TO BE PAID AT THE TIME OF PROMOTION TO NEXT HIGHER CLASS."
+                        text="PLEASE NOTE: FEES TO BE PAID AT THE TIME OF PROMOTION TO NEXT HIGHER CLASS."
                         loop={true}
                         hoverToStop={true}
                         leading={0}
