@@ -16,18 +16,23 @@ export interface IState {
 
 export class ContactUs extends React.Component<{}, IState> {
 
-    public componentWillMount() {
+    public componentDidMount() {
 
+        this._isMounted = true;
         request
             .get(Constants.serverConstants.serverIP + '/OLBS/requestConfiguration/contactUs')
             .set('Content-Type', 'application/json')
 
             .set('Accept', 'application/json')
             .end((err, resp) => {
-                if (!err) {
+                if (!err && this._isMounted) {
                     this.setState({ data: resp.body as  IContactUsDetails});
                 }
             })
+    }
+
+    public componentWillUnmount():void {
+        this._isMounted = false;
     }
 
     public render() {
@@ -74,4 +79,6 @@ export class ContactUs extends React.Component<{}, IState> {
     }
     return null;
 }
+
+private _isMounted: boolean= false;
 }

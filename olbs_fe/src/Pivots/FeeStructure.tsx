@@ -21,19 +21,23 @@ export class FeeStructure extends React.Component<{}, IState> {
         super(props);
         this.state = {feeData: []};
     }
-    public componentWillMount() {
 
-
+    public componentDidMount() {
+        this._isMounted = true;
         request
         .get(Constants.serverConstants.serverIP + '/OLBS/fees')
         .set('Content-Type','application/json')
 
         .set('Accept', 'application/json')
         .end((err, resp) => {
-          if (!err) {
+          if (!err && this._isMounted) {
            this.setState({feeData: resp.body.feeData as IFeeData[]});
           }
-        })
+        });
+  }
+
+  public componentWillUnmount(): void {
+      this._isMounted= false;
   }
 
     public render() {
@@ -48,13 +52,10 @@ export class FeeStructure extends React.Component<{}, IState> {
             <div className="fee-structure-container">
                 <div className="fee-info">
                 <div className={"marquee-container"}>
-                    <Marquee
-                        text="PLEASE NOTE: FEES TO BE PAID AT THE TIME OF PROMOTION TO NEXT HIGHER CLASS."
-                        loop={true}
-                        hoverToStop={true}
-                        leading={0}
-                        trailing={0}>
-                    </Marquee>
+                    <div>
+                    PLEASE NOTE: FEES TO BE PAID AT THE TIME OF PROMOTION TO NEXT HIGHER CLASS.
+                        
+                    </div>
                     </div>
                 </div>
                 <table>
@@ -155,4 +156,7 @@ export class FeeStructure extends React.Component<{}, IState> {
             </tbody>
         );
     }
+
+    private _isMounted: boolean = false;
 }
+
