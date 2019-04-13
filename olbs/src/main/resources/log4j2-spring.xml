@@ -30,7 +30,7 @@
                 <AppenderRef ref="OLBS_LOGS"/>
         </logger>
  
-        <logger name="org.springframework.web.client.RestTemplate" level="DEBUG" additivity = "false">
+        <logger name="org.springframework.web.client.RestTemplate" level="INFO" additivity = "false">
                 <AppenderRef ref="OLBS_LOGS"/>
         </logger>
  
