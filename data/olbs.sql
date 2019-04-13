@@ -47,10 +47,11 @@ DROP TABLE IF EXISTS `event_images`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `event_images` (
-  `event_name` varchar(50) DEFAULT NULL,
-  `event_date` date DEFAULT NULL,
+  `event_name` varchar(50) NOT NULL,
+  `event_date` date NOT NULL,
   `event_description` text,
-  `image_folder_path` varchar(100) DEFAULT NULL
+  `image_folder_path` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`event_name`,`event_date`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -99,4 +100,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-04-13 20:55:04
+-- Dump completed on 2019-04-13 21:06:49
