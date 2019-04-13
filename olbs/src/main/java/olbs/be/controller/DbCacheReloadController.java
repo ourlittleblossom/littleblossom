@@ -1,8 +1,8 @@
 package olbs.be.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -18,7 +18,7 @@ public class DbCacheReloadController {
 	@Autowired
 	private DbCacheReloadService reloadService;
 	private static final Logger LOGGER = LoggerFactory.getLogger(DbCacheReloadController.class);
-	@GetMapping(value = "/reload/{reloadType}", consumes = Constants.APPLICATION_JSON, produces = Constants.APPLICATION_JSON)
+	@PutMapping(value = "/reload/{reloadType}", consumes = Constants.APPLICATION_JSON, produces = Constants.APPLICATION_JSON)
 	public ResponseBean getFeeDetails(@PathVariable("reloadType") String reloadType) {
 		LOGGER.info("Request received for reload with request type:{}",reloadType);
 		ResponseBean rb = new ResponseBean();
