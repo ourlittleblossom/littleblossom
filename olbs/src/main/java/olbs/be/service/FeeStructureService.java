@@ -21,7 +21,7 @@ private FeeStructureRepository feeRepository;
 		FeeStructureParentBean feeData = new FeeStructureParentBean();
 		Iterator<FeeStructure> feeDetailDbList = feeRepository.findAll().iterator();
 		List<FeeStructureDetailBean> feeDetailList = new ArrayList<>();
-		feeData.setRespCode(Constants.MINUS_INT);
+		feeData.setRespCode(Constants.MINUS_ONE_INT);
 		feeData.setRespMsg(Constants.FAILURE);
 		int i=0;
 		while(feeDetailDbList.hasNext()) {

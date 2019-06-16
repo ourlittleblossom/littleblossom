@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="warn" name="OLBS" packages="">
 <Properties>
-    <Property name="LOG_PATH">${sys:catalina.home}/../logs/Olbs</Property>
+    <Property name="LOG_PATH">/Users/ujjwalgupta/Documents/Olbs/logs/</Property>
     <!-- <Property name="LOG_PATH">/Users/ujjwalgupta/Documents/Olbs/logs/</Property> -->
       </Properties>
   <Appenders>

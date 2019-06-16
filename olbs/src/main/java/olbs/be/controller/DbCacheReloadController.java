@@ -26,7 +26,7 @@ public class DbCacheReloadController {
 			rb.setRespCode(Constants.ZERO_INT);
 			rb.setRespMsg(Constants.SUCCESS);
 		}else {
-			rb.setRespCode(Constants.MINUS_INT);
+			rb.setRespCode(Constants.MINUS_ONE_INT);
 			rb.setRespMsg(Constants.FAILURE);
 		}
 		return rb;
