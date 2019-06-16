@@ -20,7 +20,7 @@ export class ContactUs extends React.Component<{}, IState> {
 
         this._isMounted = true;
         request
-            .get(Constants.serverConstants.serverIP + '/OLBS/requestConfiguration/contactUs')
+            .get(Constants.serverConstants.serverIP + '/requestConfiguration/contactUs')
             .set('Content-Type', 'application/json')
 
             .set('Accept', 'application/json')

@@ -25,7 +25,7 @@ export class FeeStructure extends React.Component<{}, IState> {
     public componentDidMount() {
         this._isMounted = true;
         request
-        .get(Constants.serverConstants.serverIP + '/OLBS/fees')
+        .get(Constants.serverConstants.serverIP + '/fees')
         .set('Content-Type','application/json')
 
         .set('Accept', 'application/json')

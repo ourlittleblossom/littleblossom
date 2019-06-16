@@ -1,0 +1,36 @@
+.pivot-content{
+    .grid-container{
+   width:20%;
+    }
+}
+#container {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    display:flex;
+    margin-right: 10px;
+    margin-left:10px;
+  }
+  #image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height:300px;
+    width:300px;
+  }
+  #image:hover{
+      cursor: pointer;
+  }
+  #text {
+    z-index: 100;
+    position: absolute;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    left: 42%;
+    top: 36%;
+    
+  }
+  #text:hover{
+      cursor: pointer;
+  }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Home } from "./Pivots/Home";
 import { FeeStructure } from "./Pivots/FeeStructure";
-import { Gallery } from "./Pivots/Gallery";
+import { Gallery2 } from "./Pivots/Gallery";
 import { ContactUs } from "./Pivots/ContactUs";
 import { About } from "./Pivots/About";
 
@@ -62,7 +62,7 @@ export class LandingPage extends React.Component<IProps, IState> {
                 return (<About />);
 
             case KeyName.gallery:
-                return (<Gallery />);
+                return (<Gallery2 />);
 
             case KeyName.feeStructure:
                 return (<FeeStructure />);

@@ -25,7 +25,7 @@ export class About extends React.Component<{}, IState> {
     public componentDidMount(): void {
         this._isMounted = true;
         request
-        .get(Constants.serverConstants.serverIP + '/OLBS/requestConfiguration/aboutUs')
+        .get(Constants.serverConstants.serverIP + '/requestConfiguration/aboutUs')
         .set('Content-Type','application/json')
 
         .set('Accept', 'application/json')
