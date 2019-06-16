@@ -35,7 +35,7 @@ CREATE TABLE `configuration` (
 
 LOCK TABLES `configuration` WRITE;
 /*!40000 ALTER TABLE `configuration` DISABLE KEYS */;
-INSERT INTO `configuration` VALUES ('aboutUs','{\"society\":\"Our Little Blossom School was founded on July, 2001 with the need for young educated citizens of the country. The society works towards providing quality education to young minds. The mission of the society is to establish strong moral values and passion for learning in every child by organising innovative training and educational programmes.\",\"principalMessage\":\"Every child is special and we at Our Litle Blossom School work towards providing each child full opprotunity and support to take first step towards his/her dream. We help the student to build the character that will be required to withstand extreme challenges and situations in life. We train the students to be a responsible citizen, teach them morale values like honesty, loyalty, respect, patience, kindness and courtesy.\",\"principalName\":\"Poonam Gupta\",\"principalImage\":\"\",\"moto\":\"Darkness to Brightness\",\"motoDescription\":\"Ensure every child\'s development to help achieve a bright future.\"}'),('contactUs','{\"emailId\": \"ourlittleblossom@gmail.com\", \"phone\": \"9045489923\",\"address\":\"4/29-A, CHASE COMPOUND, JAIL ROAD, ALIGARH\",\"fbLink\":\"https://www.facebook.com/Our-Little-Blossom-School-468131513564686/\"}');
+INSERT INTO `configuration` VALUES ('aboutUs','{\"society\":\"Our Little Blossom School was founded on July, 2001 with the need for young educated citizens of the country. The society works towards providing quality education to young minds. The mission of the society is to establish strong moral values and passion for learning in every child by organising innovative training and educational programmes.\",\"principalMessage\":\"Every child is special and we at Our Litle Blossom School work towards providing each child full opprotunity and support to take first step towards his/her dream. We help the student to build the character that will be required to withstand extreme challenges and situations in life. We train the students to be a responsible citizen, teach them morale values like honesty, loyalty, respect, patience, kindness and courtesy.\",\"principalName\":\"Poonam Gupta\",\"principalImage\":\"\",\"moto\":\"Darkness to Brightness\",\"motoDescription\":\"Ensure every child\'s development to help achieve a bright future.\"}'),('clickOutsideToClose','false'),('contactUs','{\"emailId\": \"ourlittleblossom@gmail.com\", \"phone\": \"9045489923\",\"address\":\"4/29-A, CHASE COMPOUND, JAIL ROAD, ALIGARH\",\"fbLink\":\"https://www.facebook.com/Our-Little-Blossom-School-468131513564686/\"}'),('discourageDownloads','true'),('serverImageAbsolutePath','/Users/ujjwalgupta/Documents/Olbs/apache-tomcat-8.5.39/webapps/images/'),('serverImagePrefixPath','http://127.0.0.1:1208/images/');
 /*!40000 ALTER TABLE `configuration` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -61,6 +61,7 @@ CREATE TABLE `event_images` (
 
 LOCK TABLES `event_images` WRITE;
 /*!40000 ALTER TABLE `event_images` DISABLE KEYS */;
+INSERT INTO `event_images` VALUES ('documents','2019-06-17','House documents','documents/'),('holi','2019-04-13','Holi celebration at our school','holi/'),('home','2019-06-01','Home Images','home/'),('Republic Day','2019-01-26','Independence Day Celebration with honoary guest Shyama Shukla','republicDay/');
 /*!40000 ALTER TABLE `event_images` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -100,4 +101,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-04-13 23:04:01
+-- Dump completed on 2019-06-17  0:18:42
