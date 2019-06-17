@@ -7,9 +7,12 @@
     height: 300px;
     width: 300px;
     position: relative;
-    display:flex;
+    display:inline-block;
     margin-right: 10px;
     margin-left:10px;
+    margin-top: 30px;
+    border:solid;
+    margin-bottom: 30px;
   }
   #image {
     position: absolute;
@@ -17,14 +20,16 @@
     top: 0;
     height:300px;
     width:300px;
+    opacity : 0.3;
   }
   #image:hover{
       cursor: pointer;
+      opacity : 0.5;
   }
   #text {
     z-index: 100;
     position: absolute;
-    color: black;
+    color: rgb(117, 42, 42);
     font-size: 24px;
     font-weight: bold;
     left: 42%;

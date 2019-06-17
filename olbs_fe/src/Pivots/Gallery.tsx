@@ -48,7 +48,7 @@ export class Gallery2 extends React.Component<{}, IState> {
                             })
                 }
                 return (
-                        <div style={{display:"flex"}}>{renderedList}</div>
+                        <div>{renderedList}</div>
                 );
                 
                 return null;
@@ -64,7 +64,7 @@ private _getImageRow(eventDetail: IEventDetails,i:number): JSX.Element {
                                 +{eventDetail.remainingImages}<br></br>
                                 {eventDetail.eventName}
                         </p>
-                
+                <h1>{eventDetail.eventDescription}</h1>
 
                 { 
                         eventDetail.open && (
